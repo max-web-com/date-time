@@ -1,0 +1,179 @@
+$font-stack:    Helvetica, sans-serif
+$primary-color: #333
+
+body
+  font: 100% $font-stack
+  color: $primary-color
+  background: var(--color, CornflowerBlue)
+
+
+
+*
+	font-family: Helvetica Neue
+	font-weight: 100
+	font-size: 25px
+	cursor: pointer
+
+#placeholder
+	color: #aaa
+	font-style: italic
+
+#fog
+	position: fixed
+	left:0
+	right:0
+	top:0
+	bottom:0
+	background:#eee
+	opacity: 0.9
+
+date-picker
+	position: fixed
+	left:0
+	right:0
+	margin: 0 auto
+	z-index: 100
+ 
+
+
+
+
+
+:host
+	display: block
+	width: 400px
+	background: #333
+	overflow: hidden
+
+
+:host([hidden])
+	display: none
+
+ 
+*
+	font-family: Helvetica Neue
+	font-weight: 100
+	color: white
+	font-size: 25px
+
+
+td, b
+	cursor: pointer
+	padding: 10px 0
+
+
+
+header
+	text-align: center
+	font-size: 30px
+	padding: 10px
+	font-variant: small-caps
+	font-weight: 200
+
+
+header,footer
+	background: #444
+  
+
+
+footer 
+	table 
+		width: 100%
+		border-collapse: collapse
+	td
+		width: 50%
+		text-align: center
+		font-size: 25px
+	td:first-child
+		border-right: 1px solid #333
+	td:hover
+		background: #555
+
+
+main [id] [id]:hover
+	background: #555
+
+
+
+
+#years
+	overflow-x: scroll
+	overflow-y: hidden
+	white-space: nowrap
+	table
+		display: inline-block
+		vertical-align: middle
+	td
+		padding: 10px 10px
+	b
+		font-weight: 200
+		vertical-align: middle
+		display: inline-block
+		margin-left: 20px
+
+
+
+#months
+	width: 100%
+	td
+		font-variant: small-caps
+		text-align: center
+ 
+
+
+#days
+	width: 100%
+	td
+		text-align: center
+	td:nth-child(6)
+		color: #aaa
+	td:nth-child(7)
+		color: #aaa
+
+
+
+hr
+	border: 1px solid #444
+	margin: 0
+
+
+.selected
+	background: #666
+
+
+
+
+
+
+:host{display: block; width: 400px; background: #333; overflow: hidden;}
+:host([hidden]){display: none;}
+ 
+*{font-family: Helvetica Neue; font-weight: 100; color: white; font-size: 25px;}
+td, b{cursor: pointer; padding: 10px 0;}
+
+header{text-align: center; font-size: 30px; padding: 10px; font-variant: small-caps; font-weight: 200;}
+header,footer{background: #444;  }
+
+footer table {width: 100%; border-collapse: collapse; }
+footer td{width: 50%; text-align: center; font-size: 25px;}
+footer td:first-child{border-right: 1px solid #333;}
+
+main [id] [id]:hover{background: #555;}
+footer td:hover{background: #555;}
+
+#years{overflow-x: scroll; overflow-y: hidden; white-space: nowrap;}
+#years table{display: inline-block; vertical-align: middle;}
+#years td{padding: 10px 10px;}
+#years b{font-weight: 200; vertical-align: middle; display: inline-block; margin-left: 20px;}
+
+#months{ width:100%;}
+#months td{font-variant: small-caps; text-align: center; }
+
+#days{width: 100%; }
+#days td{text-align: center;}
+#days td:nth-child(6){color: #aaa;}
+#days td:nth-child(7){color: #aaa;}
+
+hr{border:1px solid #444; margin:0;}
+.selected{background: #666;}
+
